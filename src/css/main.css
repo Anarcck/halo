@@ -52,7 +52,107 @@ nav ul li .link:hover::before{
   transform: scaleX(1);
 }
 
+nav .more{
+  display: none;
+}
+
+nav .menu{
+  position: absolute;
+  display: none;
+  flex-direction: column;
+  min-width: 200px;
+
+  background-color: white;
+}
+
+nav .menu  a{
+  padding: 10px;
+  color: black;
+  text-decoration: none;
+}
+
+nav .menu a:hover{
+  background-color: black;
+  color: white;
+}
+
 nav .mobile{
   display: none;
+  width: 100%;
+}
+
+nav .mobile .header{
+ display: flex;
+ text-align: center;
+ justify-content: space-between;
+ flex-direction: row;
+
+ background-color: black;
+
+}
+
+nav .mobile .header a{
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+}
+
+nav .mobile .header #bmenu{
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: white;
+}
+
+nav .mobile .links{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 200;
+}
+
+nav .mobile .links a{
+  font-size: 18px;
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  
+  color: white;
+}
+
+
+nav .mobile .links a:hover{
+  font-size: 18px;
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  
+  color: black;
+  background-color: white;
+}
+
+@media screen and (max-width: 1132px){
+  nav .link-hide{
+    display: none;
+  }
+
+  nav .more{
+    display: flex;
+  }
+}
+
+@media screen and (max-width: 640px){
+
+  nav {
+    width: 100%;
+    padding: 0;
+  }
+
+  nav ul {
+    display: none;
+  }
+  nav .mobile{
+    display: block;
+  }
 }
 
