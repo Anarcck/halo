@@ -209,7 +209,7 @@ header{
   transform: scaleX(1);
 }
 
-@media screen and (max-width: 1132px){
+@media screen and (max-width: 1191px){
   nav .link-hide{
     display: none;
   }
@@ -221,15 +221,19 @@ header{
   header{
     height: 70vh;
   }
+
+  #banner{
+    position: initial !important;
+    z-index: 100;
+    width: 100%;
+  }
 }
 
-@media screen and (max-width: 640px){
-
+@media screen and (max-width: 701px){
   nav {
     width: 100%;
     padding: 0;
   }
-
   nav ul {
     display: none;
   }
@@ -241,4 +245,11 @@ header{
     background-position: center 40px;
     height: 50vh;
   }
+  
+  #banner{
+    position: initial !important;
+    z-index: 100;
+    width: 100%;
+  }
+
 }
