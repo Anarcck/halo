@@ -12,6 +12,11 @@ body {
 }
 
 /*NAVBAR*/
+
+.show{
+  display: flex !important;
+}
+
 nav{
   display: flex;
   align-items: center;
@@ -61,6 +66,7 @@ nav .menu{
   display: none;
   flex-direction: column;
   min-width: 200px;
+  margin-top: 48px;
 
   background-color: white;
 }
@@ -105,7 +111,7 @@ nav .mobile .header #bmenu{
 }
 
 nav .mobile .links{
-  display: flex;
+  display: none;
   flex-direction: column;
   position: relative;
   z-index: 200;
